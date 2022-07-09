@@ -1,7 +1,15 @@
-head {
-    
+*{
+    background-color: #242323;
+    color: #a7babb;
 }
 
-header h1{
-    font-size: xxx-large
+header {
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: xxx-large;
+    margin-left: auto;
+    margin-right: auto;
 }
