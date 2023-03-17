@@ -8,7 +8,7 @@ const prepColors = async () => {
     colors.push("red");
     colors.push("blue");
   }
-  colors.push(Math.random() % 2 == 0 ? "red" : "blue");
+  colors.push(Math.random() < 0.5 ? "red" : "blue");
   return colors;
 };
 
