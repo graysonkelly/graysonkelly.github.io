@@ -1,11 +1,14 @@
 // Fetch 25 random nouns from the API
 const fetchNouns = async () => {
     const nouns = [];
-    for (let i = 0; i < 25; i++) {
+    while (nouns.length < 25) {
       try {
         const response = await fetch('https://random-word-form.herokuapp.com/random/noun');
-        const [noun] = await response.json();
-        nouns.push(noun.toUpperCase());
+        var [noun] = await response.json();
+        noun = noun.toUpperCase()
+        if(!nouns.includes(noun)){
+          nouns.push(noun);
+        }
       } catch (error) {
         console.log(error);
       }
