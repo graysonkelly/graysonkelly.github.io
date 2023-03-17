@@ -5,7 +5,7 @@ const fetchNouns = async () => {
       try {
         const response = await fetch('https://random-word-form.herokuapp.com/random/noun');
         const [noun] = await response.json();
-        nouns.push(noun);
+        nouns.push(noun.toUpperCase());
       } catch (error) {
         console.log(error);
       }
@@ -31,7 +31,7 @@ const fetchNouns = async () => {
         const box = document.createElement('div');
         box.classList.add('box');
         // Set the text content of the box to a random noun from the array of nouns
-        box.textContent = nouns[i * 5 + j];
+        box.innerHTML = `<div class="cardTop">${nouns[i * 5 + j]}</div><br><div class="cardBottom">${nouns[i * 5 + j]}</div>`;
         // Append the box to the row
         row.appendChild(box);
       }
