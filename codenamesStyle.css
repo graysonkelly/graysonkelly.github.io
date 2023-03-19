@@ -10,7 +10,7 @@
 	background-color: #f1f1f1;
 	border: 1px solid #ccc;
 	font-family: "Courier New";
-	font-size: 24px;
+	font-size: 26px;
 	font-weight: bold;
 	margin: 5px;
 	padding: 5px;
@@ -22,11 +22,13 @@
 
 .cardTop {
 	display: flex;
-	transform: rotate(0.5turn);
 	justify-content: center;
 }
 
 .cardBottom {
 	display: flex;
 	justify-content: center;
+	color: #3e3e3e;
+	font-size: 16px;
+	transform: rotate(0.5turn);
 }
