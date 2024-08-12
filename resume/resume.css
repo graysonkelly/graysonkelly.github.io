@@ -1,0 +1,160 @@
+body {
+    font-family: 'Consolas', 'Monaco', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    color: #e8e6e3;
+    line-height: 1.6;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+header {
+    text-align: left;
+    margin: 25px 0;
+    font-size: larger;
+}
+
+header a {
+    color: #e8e6e3;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        background-color: #e8e6e3;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+}
+
+.blinking-cursor {
+    display: inline-block;
+    width: 20px;
+    height: .8em;
+    background-color: #e8e6e3;
+    animation: blink 1.5s step-end infinite;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: large;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: #9CDCFE;
+}
+
+strong {
+    font-size: large;
+}
+
+li ul li {
+    padding-left: 12px;
+}
+
+ul li p {
+    padding-left: 12px;
+}
+
+.section {
+    text-align: left;
+    margin: 20px 0;
+    background-color: #252525;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills>div {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.skills>div ul li {
+    position: relative;
+    padding-right: 100px;
+}
+
+.years {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section-left-align {
+    text-align: left;
+}
+
+.section-left-align li strong {
+    color: #ff8a65;
+}
+
+.section-left-align li p {
+    color: #e8e6e3;
+}
+
+.section-left-align li a {
+    font-size: small;
+    margin-top: -5px;
+    display: inline-block;
+    color: #4d80c2;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #252526;
+    color: #e8e6e3;
+}
+
+@media (min-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .skills>div {
+        width: 48%;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 80%;
+    }
+
+    .skills>div {
+        width: 32%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 70%;
+    }
+}

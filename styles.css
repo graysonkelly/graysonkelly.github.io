@@ -1,0 +1,29 @@
+* {
+    background-color: #242323;
+    color: #a7babb;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: xxx-large;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header a {
+    font-size: 20px;
+    /* Adjust font size here */
+    color: #a7babb;
+    /* Standard text color */
+    text-decoration: none;
+    /* No underline */
+}
+
+header a:hover {
+    text-decoration: underline;
+    /* Underline on hover for better usability */
+}
