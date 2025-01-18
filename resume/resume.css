@@ -40,18 +40,6 @@ header a {
     flex-direction: column;
 }
 
-@keyframes blink {
-
-    0%,
-    100% {
-        background-color: #e8e6e3;
-    }
-
-    50% {
-        background-color: transparent;
-    }
-}
-
 .blinking-cursor {
     display: inline-block;
     width: 20px;
@@ -62,8 +50,13 @@ header a {
     margin-left: 3px;
 }
 
-h1 a {
-    text-decoration: none;
+@keyframes blink {
+    0%, 100% {
+        background-color: #e8e6e3;
+    }
+    50% {
+        background-color: transparent;
+    }
 }
 
 h2 {
@@ -71,18 +64,6 @@ h2 {
     margin-top: .5em;
     margin-bottom: .5em;
     color: #9CDCFE;
-}
-
-strong {
-    font-size: large;
-}
-
-li ul li {
-    padding-left: 12px;
-}
-
-ul li p {
-    padding-left: 12px;
 }
 
 .section {
@@ -93,51 +74,21 @@ ul li p {
     border-radius: 4px;
 }
 
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.skills-column {
+    margin-bottom: 20px;
+    background-color: #252525;
+    padding: 15px;
+    border-radius: 4px;
 }
 
-.skills>div {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.skills>div ul li {
-    position: relative;
-    padding-right: 100px;
-}
-
-.years {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.section ul {
+.skills-column ul {
     list-style-type: none;
     padding: 0;
 }
 
-.section-left-align {
-    text-align: left;
-}
-
-.section-left-align li strong {
-    color: #ff8a65;
-}
-
-.section-left-align li p {
+.skills-column li {
+    line-height: 1.6;
     color: #e8e6e3;
-}
-
-.section-left-align li a {
-    font-size: small;
-    margin-top: -5px;
-    display: inline-block;
-    color: #4d80c2;
 }
 
 footer {
@@ -145,31 +96,4 @@ footer {
     margin-top: 20px;
     padding: 10px;
     background-color: #252526;
-    color: #e8e6e3;
-}
-
-@media (min-width: 600px) {
-    .container {
-        width: 90%;
-    }
-
-    .skills>div {
-        width: 48%;
-    }
-}
-
-@media (min-width: 900px) {
-    .container {
-        width: 80%;
-    }
-
-    .skills>div {
-        width: 32%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 70%;
-    }
 }
